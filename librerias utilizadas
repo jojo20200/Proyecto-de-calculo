@@ -1,0 +1,39 @@
+#Codigo dividido, y vizualizar en donde se pueden hacer cambios y en donde no 
+import math
+import os
+import numpy as np
+import sympy as sp
+from sympy import symbols
+from sympy.core.sympify import SympifyError
+import matplotlib
+
+try:
+    matplotlib.use("TkAgg")
+except Exception:
+    pass
+
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
+from matplotlib import animation
+import tkinter as tk
+from tkinter import ttk, scrolledtext, filedialog , messagebox, colorchooser
+import time 
+from PIL import Image, ImageTk
+import sys
+import scipy.integrate as sci_integrate
+from scipy.optimize import fsolve
+import matplotlib.patches as patches 
+from matplotlib.patches import Polygon
+from matplotlib.collections import PatchCollection
+from scipy.integrate import quad
+
+  #calculando derivadas segun el orden
+
+def num_deriv(f, x, dx=1e-6, n=1):
+    if n == 1:
+        return (f(x +dx) - f(x - dx)) / (2 * dx)
+    elif n==2:
+        return (f(x + dx) - 2 * f(x) + f(x - dx)) / dx**2
+    else:
+        return num_deriv(lambda t : num_deriv(f, t, dx=dx, n=1), x,  dx=dx, n=n-1)
+    
