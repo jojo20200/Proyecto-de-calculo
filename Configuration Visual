@@ -1,0 +1,49 @@
+class AppConfig:
+    DARK_THEME = {
+        "bg": "#0a0f1c",
+        "card_bg": "#131a2c",
+        "accent": "#00d4ff",
+        "accent_secondary": "#ff6b9d",
+        "accent_tertiary": "#7eff7e",
+        "text_primary": "#ffffff",
+        "text_secondary": "#b0b8d1",
+        "text_muted": "#8a93b0",
+        "success": "#00ffaa",
+        "warning": "#ffd166",
+        "error": "#ff6b6b",
+        "border": "#1e2a45",
+        "button_bg": "#1a243b",
+        "button_hover": "#243355",
+        "entry_bg": "#0d1424",
+        "plot_bg": "#0b1220",
+        "plot_grid": "#1a2a4a"
+    }
+    LIGHT_THEME = {
+        "bg": "#f0f4ff",
+        "card_bg": "#ffffff",
+        "accent": "#0066ff",
+        "accent_secondary": "#ff3366",
+        "accent_tertiary": "#00cc66",
+        "text_primary": "#1a1a2e",
+        "text_secondary": "#4a5568",
+        "text_muted": "#718096",
+        "success": "#00b894",
+        "warning": "#fdcb6e",
+        "error": "#e84393",
+        "border": "#e2e8f0",
+        "button_bg": "#e2e8f0",
+        "button_hover": "#cbd5e0",
+        "entry_bg": "#ffffff",
+        "plot_bg": "#ffffff",
+        "plot_grid": "#e2e8f0"
+    }
+    ANIMATION_SPEEDS = {
+        "slow": 100,
+        "normal": 50,
+        "fast": 20,
+        "instant": 0
+    }
+    GRADIENT_COLORS = [
+        '#00d4ff', '#ff6b9d', '#7eff7e', '#ffd166', '#9d4edd',
+        '#ff9e64', '#4cc9f0', '#f72585', '#7209b7', '#3a86ff'
+    ]
